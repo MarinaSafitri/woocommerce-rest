@@ -1,0 +1,94 @@
+/* Tags */
+
+body {
+	font: 13px Arial, sans-serif;
+	color: #555555;
+	background: #EFEFEF;
+}
+
+h1, h2, h3, h4 {
+	color: #333333;
+	font-weight: normal;
+}
+
+h1 {	
+	margin-bottom: 10px;
+	font-weight: bold;
+}
+
+h3 {
+	padding-top: 15px;
+}
+
+strong {
+	color: #444444;
+}
+
+a,
+a:visited {
+	color: #227AA1;
+}
+
+a:hover {
+	color: #E44D26;
+}
+
+hr {
+	border-color: #EFEFEF;
+	margin: 30px 0;
+}
+
+p {
+	line-height: 1.5;
+}
+
+ol li,
+ul li {
+	margin-bottom: 5px;
+	line-height: 1.5;
+}
+
+ol ol,
+ol ul,
+ul ul,
+ul ol {
+	margin-top: 10px;
+}
+
+/* Common */
+
+.note {
+	padding: 15px 15px 15px 40px;
+	background: #FAFAFA url("../images/ico_note.png") no-repeat 15px 15px;
+	border-top: 1px solid #EFEFEF;
+	border-bottom: 1px solid #EFEFEF;
+}
+
+/* Custom */
+
+#wrapper {
+	background: #FFFFFF;
+	width: 894px;
+	padding: 10px 30px;
+	margin: 30px auto;	
+	border: 3px solid #ECECEC;	
+}
+
+header {	
+	padding-bottom: 15px;	
+	margin-bottom: 30px;	
+	border-bottom: 1px solid #EFEFEF;
+}
+
+#toc ol { counter-reset: item; padding-left: 20px; }
+#toc ol ol { padding-left: 40px; }
+#toc ol li { display: block; }
+#toc ol li:before { content: counters(item, ".") ". "; counter-increment: item; }
+
+footer {
+	padding: 20px 0 10px 0;
+	margin-top: 30px;
+	border-top: 1px solid #EFEFEF;
+	font-size: 90%;
+	color: #999999;
+}

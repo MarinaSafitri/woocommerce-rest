@@ -1,0 +1,4 @@
+- in import-data folder, demo data files included that you can import in wordpress.
+- in Bonus folder , 2 bonus logos included with raw files.
+- PSDs.zip is the psd for the design, note you might find PSDs a little different from theme. as actual theme is modified alot time to time.
+- Child-themes folder has 2 child theme, js-child.zip is a blank child theme for the justshop theme,  you can use this childtheme if you want to heavy modify the theme. justshop-rtl is child theme that makes theme compatible for right to left languages.

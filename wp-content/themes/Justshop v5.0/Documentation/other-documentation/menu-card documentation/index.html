@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Retail Menu Cards - Responsive WordPress Plugin</title>
+<meta name="description" content="The document contains information on how to install and setup the theme with your own content.">
+<meta name="author" content="Adrian Diaconescu">
+
+<script src="assets/js/highlight.js"></script>
+
+<link rel="stylesheet" href="assets/css/reset.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/highlight.css">
+
+<script>
+// Init syntax highlighter
+hljs.tabReplace = '    ';
+hljs.initHighlightingOnLoad();
+</script>
+
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+</head>
+
+<body>
+	
+	<div id="wrapper">
+
+		<header>
+			
+			<h1>Retail Menu Cards - Responsive WordPress Plugin</h1>		
+			<p><strong>Created:</strong> Feb 12th, 2013 / <strong>Author:</strong> <a href="http://codecanyon.net/user/rubiqube" target="_blank">Adrian Diaconescu</a></p>
+		
+		</header>
+		
+		<div id="container">
+			
+			<p>Thank you for purchasing my plugin! If you have any questions that are beyond the scope of this help file or even suggestions on how to improve the theme, the best way to get in touch is via my <a href="http://codecanyon.net/user/rubiqube" target="_blank">CodeCanyon profile page</a> contact form (right sidebar, at the bottom).</p>
+			
+			<p>I take feedback very seriously and I always do my best to help out everyone, so you can be sure you'll hear from me sooner or later, depending on my availability and the nature of your issue.</p>
+			
+			<p class="note"><strong>Note:</strong> I check the plugin's comments section on CodeCanyon from time to time, so you can leave a message there as well, but please don’t ask for support via Twitter or directly on my website, as I try to keep support requests centralized. Thank you!</p>
+			
+			<hr />
+			
+			<h2>Table of Contents</h2>
+			
+			<div id="toc">
+				<ol>
+					<li><a href="#introduction">Introduction</a></li>
+					<li><a href="#plugin-setup">Plugin Setup</a>
+						<ol>							
+							<li><a href="#installation">Installation</a></li>
+							<li><a href="#plugin-settings">Plugin Settings</a></li>							
+						</ol>	
+					</li>
+					<li><a href="#using-the-plugin">Using the Plugin</a>
+						<ol>
+							<li><a href="#adding-menu-items">Adding Menu Items</a></li>
+							<li><a href="#using-the-shortcode">Using the Shortcode</a></li>
+							<li><a href="#using-the-widget">Using the Widget</a></li>										
+						</ol>	
+					</li>
+					<li><a href="#recommended-plugins">Recommended Plugins</a></li>
+				</ol>
+			</div>
+			
+			<hr />
+			
+			<h2 id="introduction">1. Introduction</h2>
+			
+			<p><strong>Retail Menu Cards</strong> is a plugin that allows you to create, manage and display <strong>menu cards in WordPress</strong>. It can be used to create a <strong>restaurant menu</strong>, just as well as a retail store&#8217;s <strong>product list</strong> or a <strong>list of services</strong> for a dental practice or beauty center.</p>
+
+			<p>The plugin uses a <strong>custom post type</strong> and <strong>custom taxonomies</strong>, which basically means that the process of building up your menus is exactly the same as adding posts, categories and tags in WordPress. There&#8217;s almost no learning curve and you&#8217;ll feel right at home.</p>
+			
+			<hr />
+			
+			<h2 id="plugin-setup">2. Plugin Setup</h2>
+			
+			<p>Before installing the plugin and setting up the content, please make sure you have the <a href="http://wordpress.org/" target="_blank">latest version of WordPress</a> installed. The theme should work with previous versions (although WordPress 3 is required), but my advice is to update as soon as possible.</p>
+				
+			<p>Once you're ready, login into the WordPress admin and follow the steps below:</p>
+			
+			<h3 id="installation">2.1. Installation</h3>
+			
+			<p>In the ZIP file you downloaded from CodeCanyon there should be a folder called <em>retail-menu-cards</em> and a file called <em>retail-menu-cards.zip</em>. There are two ways to install the theme:</p>
+			
+			<ol>
+				<li><strong>WordPress Upload</strong> - Go to <em>Plugins > Add New</em>, then click the <strong>Upload</strong> link. Choose the ZIP file from your hard drive and click <strong>Install Now</strong>. Wait for a few seconds for the file to upload, then click <strong>Activate</strong>.</li>
+				<li><strong>FTP Upload</strong> - If you're familiar with using an FTP client, all you have to do is upload the <em>retail-menu-cards</em> folder into <em>/wp-content/plugins/</em>, then go to <em>Plugins > Installed Plugins</em> and click <strong>Activate</strong> for Retail Menu Cards.</li>
+			</ol>
+			
+			<p class="note"><strong>Note:</strong> Do not use the main ZIP file you downloaded (use the plugin ZIP only), otherwise the whole process will fail.</p>
+			
+			<p class="note"><strong>Note:</strong> As soon as the plugin is installed, go to <em>Settings > Retail Menu Cards</em> and click <strong>Save Changes</strong> to set the default plugin settings. You can of course make changes first (and I cover them below), but clicking this button once the plugin is activated is important.</p>
+			
+			<h3 id="plugin-settings">2.2. Plugin Settings</h3>
+			
+			<p>Retail Menu Cards comes with an intuitive, easy to use settings page, that you may use to customize the appearance of the menu cards. You can access it by navigating to <em>Settings > Retail Menu Cards</em>. Here's a description of each setting and how it affect the plugin output:</p>
+			
+			<h4>Display</h4>
+			
+			<ul>
+				<li><strong>Thumbnail links to</strong> - Choose what the thumbnail links to. This value may be overwritten by short code attributes.</li>
+				<li><strong>Title links to</strong> - Choose what the title links to. This value may be overwritten by short code attributes.</li>
+				<li><strong>Thumbnail</strong> - Turn the thumbnail on / off.</li>
+				<li><strong>Price</strong> - Turn the price on / off.</li>
+				<li><strong>Description</strong> - Turn the description on / off.</li>
+				<li><strong>Labels</strong> - Turn the labels on / off.</li>			
+			</ul>
+			
+			<h4>Currency</h4>
+			
+			<ul>
+				<li><strong>Currency</strong> - Enter the symbol or letters representing the currency that sits next to the menu item price.</li>
+				<li><strong>Position</strong> - Place the symbol after the number representing the price.</li>				
+			</ul>
+			
+			<h4>Styling</h4>
+			
+			<ul>
+				<li><strong>Thumbnail width</strong> - Enter the thumbnail width.</li>
+				<li><strong>Thumbnail height</strong> - Enter the thumbnail height.</li>
+				<li><strong>Thumbnail crop</strong> - Crop the thumbnail to the exact thumbnail width and height.</li>
+				<li><strong>Look and feel</strong> - Choose one of the menu styles that come with the plugin: Classic, List, Box, Grid and Light.</li>
+				<li><strong>Layout</strong> - Choose the number of columns: 1 Column, 2 Columns, 3 Columns or 4 Columns.</li>
+				<li><strong>Custom CSS</strong> - Enter your own CSS that complements or overwrites the menu style chosen above.</li>
+			</ul>
+			
+			<p class="note"><strong>Note:</strong> Changes made to the thumbnail width, height or crop only affect future image uploads, not images already uploaded. Scroll below to <a href="#recommended-plugins">Recommended Plugins</a> for a tip on how to change thumbnails for older images.</p>
+			
+			<p class="note"><strong>Note:</strong> If you don't choose to crop the thumbail to exact dimentions, you can only add either the width or the height and the other one will be dinamically adjusted to keep the thumbnail proportional.</p>
+			
+			<p class="note"><strong>Pro Tip:</strong> If you intend to use the a small thumbnail size, first resize your thumbnails to 270x180 and only then add your own size. That way the thumbnail will use your chosen widht and height on large displays, but will not get stretched on mobile displays, where they take 100% of the screen width.<p>
+			
+			<hr />
+			
+			<h2 id="using-the-plugin">3. Using the Plugin</h2>
+			
+			<p>Once you activate the plugin, you will notice a new section named <em>Menu</em> shows up in the WordPress admin, below the <em>Posts</em> section. This is where you will be able to add, edit and delete menu items, as well as group them by menu cards.</p>
+			
+			<p>The menu items are custom post types, which basically means they behave exactly like posts, but at the same time allow you to keep your content separated. So you have Menu Items instead of Posts, Cards instead of Categories and Labels instead of Tags. However, the principle behind them is the same:</p>
+			
+			<h3 id="adding-menu-items">3.1. Adding Menu Items</h3>
+			
+			<p>Follow the steps below to add your first menu item and set some properties for it:</p>
+				
+			<ul>
+				<li>Go to <em>Menu > Add New</em> to open the menu item editor. It's identical to the post editor, except you have an additional panel called "Item Details", with two additional properties: Description and Price.</li>
+				<li>Enter the item's title, description and price, then in the "Cards" panel click <strong>+ Add New Cards</strong> to add it to a new card. You can optionally add labels and set a featured image, that will be used as thumbnail.</li>
+				<li>Click <strong>Publish</strong>.</li>
+			</ul>
+			
+			<p class="note"><strong>Note:</strong> You have to create at least one Card, that holds all your Items, otherwise the output will be empty.</p>
+			
+			<p>That's it! You created your first menu item. Repeat the process to add more items and create more cards, or use existing ones. You can also create additional cards beforehand under <em>Menu > Cards</em>. This is also the place where you can edit cards and add a description for them.</p>
+			
+			<h3 id="using-the-shortcode">3.2. Using the Shortcode</h3>
+			
+			<p>Once you added a couple of meu items and cards, you can use a shortcode to insert one of the menu cards (or all of them) into any page or post. Just add the following to your page / post editor to show all menu items, grouped by menu card:</p>
+			
+<pre><code>[rmc-menu]</code></pre>
+
+			<p>You can also use the shortcode generator by clicking <strong>Insert Menu Shortcode</strong> button in the page editor (the one with the open book icon). Here are the shortcode attributes:</p>
+				
+			<ul>
+				<li><strong>menu</strong> - accepts a list of menu card separated IDs. You can determine a menu card's ID at <em>Menu > Cards</em>, by rolling over a menu card link and looking at the number after "tag_ID=" in the browser status bar.</li>
+				<li><strong>heading</strong> - accepts "yes" or "no".</li>
+				<li><strong>thumblink</strong> - accepts "image" (links the thumb to the large version of the image), "post" (links to the single post page) and "none" (no link at all).</li>
+				<li><strong>titlelink</strong> - accepts "image" (links the thumb to the large version of the image), "post" (links to the single post page) and "none" (no link at all).</li>
+				<li><strong>layout</strong> - accepts "1col", "2col", "3col" and "4col".</li>
+				<li><strong>look</strong> - accepts "classic", "list", "box", "grid" and "light".</li>
+			</ul>
+			
+			<p>Here's an example of using the shortcode with these attributes:</p>
+
+<pre><code>[rmc-menu menu="14,17" heading="no" thumblink="image" titlelink="post" look="classic" layout="2col"]</code></pre>
+			
+			<p>The best way to see how all this works and how it affects the output is to use the syntax mentioned above yourself and experient with these attributes. Just email me if you have questions. ;)</p>
+
+			<h3 id="using-the-widget">3.3. Using the Widget</h3>
+			
+			<p class="note"><strong>Note:</strong> Your theme must have at least one widget ready area for you to be able to use this feature.</p>
+			
+			<p><strong>Retail Menu Cards</strong> comes with one custom widget called "RMC Menu Items". It allows you to display a list of menu items, no matter what menu cards they belong to.<p>
+				
+			<p>Go to <em>Appearance > Widgets</em> and drag the "RMC Menu Items" widget into a widget ready area. You can define the widget title (or leave this empty to not show a widget title), choose one or more menu items to show (use <strong>Ctrl + Left Click</strong> to select multiple items), as well as choose what the thumb and title link to. You can also select multiple items and just show them as a simple list.</p>
+			
+			<hr />
+			
+			<h2 id="recommended-plugins">4. Recommmended Plugins</h2>
+			
+			<p>The plugin does not rely on other plugins for functionality, but there are a few plugins that I found usefull and that I highly recommend:</p>			
+			
+			<ul>				
+				<li><a href="http://wordpress.org/extend/plugins/regenerate-thumbnails/">Regenerate Thumbnails</a> - Allows you to resize previously uploaded images, once you change the thumbnail size under <em>Settings > Media</em>.</li>
+				<li><a href="http://wordpress.org/extend/plugins/post-types-order/">Post Types Order</a> - Adds a <em>Menu > Re-Order</em> link, where you can use drag and drop to order Menu Items.</li>
+				<li><a href="http://wordpress.org/extend/plugins/taxonomy-terms-order/">Category Order and Taxonomy Terms Order</a> - Adds a <em>Menu > Taxonomy Order</em> link, where you can use drag and drop to order Cards.</li>
+				<li><a href="http://wordpress.org/extend/plugins/fancybox-for-wordpress/">Fancybox for WordPress</a> - Seamlessly integrates FancyBox into your blog / site. Menu item images can now show in a modal window.</li>
+			</ul>
+				
+		</div><!-- #container -->	
+		
+		<footer>
+			
+		<p>Once again, thank you for purchasing this plugin! This means you already supported my efforts to build creative WordPress themes and useful WordPress plugin on ThemeForest and CodeCanyon. If your experience with this plugin is a positive one, please spread the word. I would also appreciate it if you could leave a rating in your CodeCanyon account's Downloads section. You rock!</p>
+		
+		<p><em>Adrian Diaconescu</em></p>
+		
+		</footer>
+		
+	</div><!-- #wrapper -->	
+
+  
+</body>
+
+</html>
